@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 기말 과제 웹페이지 Pokémon </title>
+
+    <!-- 부트스트랩 기본 예제용 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- 헤더용 링크 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <!-- 헤더 간략하게 -->
+    <header class="jumbotron text-center mb-0 rounded-0" style="background-color: rgb(63, 197, 81);">
+        <h1>for Pokémon</h1>
+        <p>20년째 초보 포켓몬 트레이너</p>
+    </header>
+
+    <!-- 내비게이션 바 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME / 홈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="motte.html">Motte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arsenal.html">Arsenal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemon.html">Pokémon</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="books.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Books</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              This homepage is a collection of things I like
+            </span>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">책 소개 페이지 안내</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>아직 미완성이라 준비 중입니다. 기대해 주세요!</p>
+                <p>It's not finished yet, so I'm getting ready. <br> Please be looking forward for it!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 내용 -->
+    <div class="container">
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1" style="margin-bottom: 20px;">어릴적 내 꿈은 <br>포켓몬 박사!</h1>
+            <p class="lead"> 누구나 어렸을 때는 허황된 꿈을 꾸곤 한다. <br>나는 포켓몬 박사가 되고 싶었다. <br>하지만 아는 사람들이라면 알만 한 사실.
+              <br>포켓몬은 생각보다 매우 복잡한 게임이다. <br>스토리 위주로 플레이한다면 기본적인 타입 상성만 알아도 충분하지만, 실전 배틀은 정말...
+              미친 XX들이 많다. <br>악랄한 고인물 유저들 사이 초식 동물 같은 호현이의 애착 샘플을 소개한다. </p>
+          </div>
+          <div class="col-lg-4 p-0 ">
+            <img class="rounded-lg-3" src="사진/이어롤_공식_일러스트.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 50px; margin-bottom: 50px;">
+
+    <div class="container d-grid gap-3">
+      <h2 class="fw-bolder" style="text-align: center;"> 애착 샘플 </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/이어롭.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">이어롭</h5>
+                  <p class="card-text"> 귀여워서 어떻게든 쓰려는데 솔직히 별로. 그나마 있는 장점인 다양한 변화기로 아주 작은 변수를 만든다. </p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%96%B4%EB%A1%AD_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/라프라스.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">라프라스</h5>
+                  <p class="card-text">지우 형의 유용한 이동수단. 생각보다 단단하고 강하지만 장단점이 뚜렷하여 자주 간파당한다. </p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%EB%9D%BC%ED%94%84%EB%9D%BC%EC%8A%A4_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/치라치노.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">치라치노</h5>
+                  <p class="card-text">극한의 예능 포켓몬. 컨셉은 확실하지만 개복치만큼 잘 죽는다. 물론 제대로 걸리면 상대를 진짜 짜증나게 할 수 있다. </p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%EC%B9%98%EB%9D%BC%EC%B9%98%EB%85%B8_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/킹드라.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">킹드라</h5>
+                  <p class="card-text">어릴 적 정말 갖고 싶던 포켓몬. 모든 상황이 갖춰지면 강하고 좋다. 근데 그건 누구나 다 그렇지 않을까?</p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%ED%82%B9%EB%93%9C%EB%9D%BC_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/왕구리.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">왕구리</h5>
+                  <p class="card-text">기우제 100% 성공 포켓몬. 사실 비만 뿌리면 아무래도 좋은데, 꽤 유용한 기술도 많이 배운다. 이어롭 밥그릇 뺏기 포켓몬. </p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%EC%99%95%EA%B5%AC%EB%A6%AC_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px; border-color: rgb(63, 197, 81);">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="사진/달코퀸.png" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">달코퀸</h5>
+                  <p class="card-text">캐릭터 디자인 괜찮은데 인기 없음. 사람들이 잘 모르는 포켓몬이다. 덕분에 쏠쏠하게 활약하는데다 보다 보면 귀엽다.</p>
+                  <a href="https://pokemon.fandom.com/ko/wiki/%EB%8B%AC%EC%BD%94%ED%80%B8_(%ED%8F%AC%EC%BC%93%EB%AA%AC)" class="card-text" style="text-decoration:none" target="_blank"><small class="text-muted">정보 더 보기</small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 하단 푸터 -->
+    <hr style="margin-top: 50px;">
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">맨 위로</a>
+        </p>
+        <p class="mb-1">e-mail adress : 96skystar@hanmail.net & 96skystar@naver.com</p>
+        <p class="mb-0">*호현이가 가장 좋아하는 포켓몬은 <strong>이어롤</strong>이다. 이어롭이 아니다. 진화하기 전이 제일 예쁘다. </p>
+        <p class="mb-0">*대부분의 샘플은 지포시(포켓몬 팬카페)와 눈파티님의 블로그에서 참고하며, 그때그때 랭킹에 맞춰 조금씩 바꾼다. </p>
+      </div>
+    </footer>
+    
+</body>
+</html>

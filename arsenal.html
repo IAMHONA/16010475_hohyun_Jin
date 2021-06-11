@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 기말 과제 웹페이지 Arsenal </title>
+
+    <!-- 부트스트랩 기본 예제용 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- 헤더용 링크 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+      .blwh {
+        color: rgb(0, 0, 0);
+        text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+        -moz-text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+        -webkit-text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+      }
+    </style>
+
+</head>
+<body>
+    <!-- 헤더 간략하게 -->
+    <header class="jumbotron text-center mb-0 rounded-0" style="background-color: rgba(248, 66, 66, 0.74);">
+        <h1>for Arsenal</h1>
+        <p>그래도 나름 FA컵 최다 우승팀. 아스날</p>
+    </header>
+
+    <!-- 내비게이션 바 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME / 홈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="motte.html">Motte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arsenal.html">Arsenal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemon.html">Pokémon</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="books.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Books</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              This homepage is a collection of things I like
+            </span>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">책 소개 페이지 안내</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>아직 미완성이라 준비 중입니다. 기대해 주세요!</p>
+                <p>It's not finished yet, so I'm getting ready. <br> Please be looking forward for it!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 커스텀 카드 + 아코디언 + 사이드 메뉴 -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2>20-21 시즌 정리</h2>
+        <hr>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('사진/커뮤니티실드우승.png');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold blwh"> 2020 The FA Community Shield Winner </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3 blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Wembley Stadium</small>
+                  </li>
+                  <li class="d-flex align-items-center blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>29th. Aug. 2020</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('사진/부진한아스날.png');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold blwh">Crisis... and Super Rookie's Growth</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3 blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Emirates Stadium</small>
+                  </li>
+                  <li class="d-flex align-items-center blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>27th. Dec. 2020</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('사진/유럽대항전실패.png');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold blwh">Missed Out on Qualifying for European competition</h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3 blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>Emirates Stadium</small>
+                  </li>
+                  <li class="d-flex align-items-center blwh">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>24th. May. 2021</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-7">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button btn-outline-danger"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          #1 FA 커뮤니티 실드 우승으로 순조로운 시작
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>아르테타 감독의 두 번째 우승컵.</strong> 직전 시즌 리그 우승 팀과 FA컵 우승 팀의 대결인 커뮤니티 실드에서 리버풀을 꺾고 우승하며 좋은 출발을 알렸다. 
+                          프리시즌 준비 기간이 짧았음에도 어수선한 팀의 분위기를 끌어올릴 수 있을 성과였다. 화려한 공격보다는 안정적인 수비 운영으로 역습을 노린 점이 좋았다. 
+                          팀에서 가장 어린 편이지만 꾸준한 활약을 보여준 <strong>부카요 사카</strong>와 형님 라인이면서 동시에 주장인 <strong>오바메양</strong>의 컨디션이 괜찮아 보여 다가올 시즌에 대한 기대감도 커졌다.
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          #2 전반기 리그에서의 극심한 부진... 그리고 등장한 난세의 영웅
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>11월부터 12월까지 리그 7경기 연속 무승. 3득점 11실점. </strong> 리그 일정 중 가장 바쁜 순간, 심각한 부진에 빠졌다. 믿었던 <strong>오바메양</strong>은
+                          경기장에 있었는지도 모를 만큼 못했다. 기대했던 이적생 <strong>윌리안</strong>은 없는게 나을 정도였다. 답답한 상황을 바꾼 건 만년 유망주 꼬리표를 떼지 못했던 <strong>에밀 스미스 로우</strong>였다.
+                          크리스마스 다음날 펼쳐진 런던 라이벌 첼시와의 경기에서 맹활약했다. 이후에도 계속 좋은 모습을 보이며 팬들에게 크리스마스 선물로 불렸다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          #3 극적인 맹진, 하지만 아쉬운 결과
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>25년 만에 유럽 대항전 진출 실패.</strong> 후반기 24경기 14승 5무 5패. 크리스마스를 기점으로 살아난 아스날은 리그에서 맹진을 시작했다. 
+                          유로파 리그에서도 4강에 오르며 다음 시즌 유럽 대항전 진출에 대한 희망을 이어갔다. 하지만 준결승에서 아쉽게 탈락, 리그도 8위로 마감했다.
+                          절망적인 성적이지만 주저앉아있을 시간이 없다. 빠르게 팀을 정비해서 다시 나아가야 한다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-4">
+                <h3> 사이드 메뉴 </h3>
+                <hr>
+                <div class="list-group">
+                    <a href="https://cafe.naver.com/arsnl" class="list-group-item" target="_blank">아스날 팬카페 Arsenalish</a>
+                    <a href="https://www.arsenal.com/" class="list-group-item" target="_blank">아스날 공식 홈페이지</a>
+                    <a href="https://www.youtube.com/user/ArsenalTour" class="list-group-item" target="_blank">아스날 공식 유튜브</a>
+                    <a href="https://arsenaldirect.arsenal.com/?utm_source=arsenaldotcom&utm_medium=OnlineShoppingButton&utm_campaign=ArsenalOnlineShopping" class="list-group-item" target="_blank">아스날 유니폼 구매</a>
+                    <a href="https://www.premierleague.com/tables" class="list-group-item" target="_blank">프리미어리그 순위표</a>
+                    <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791160075793&orderClick=LAG&Kc=" class="list-group-item" target="_blank">아르센 벵거 자서전</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 하단 푸터 -->
+    <hr style="margin-top: 50px;">
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">맨 위로</a>
+        </p>
+        <p class="mb-1">e-mail adress : 96skystar@hanmail.net & 96skystar@naver.com</p>
+        <p class="mb-0">*13-14 시즌부터 아스날을 팔로우한 호현이는 아직 리그 우승을 본 적이 없다. </p>
+      </div>
+    </footer>
+    
+</body>
+</html>

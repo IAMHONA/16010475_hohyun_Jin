@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기말 과제 웹페이지 Home</title>
+
+    <!-- 부트스트랩 기본 예제용 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- 헤더용 링크 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- blog example 링크 -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 헤더 간략하게 -->
+    <header class="jumbotron text-center mb-0 rounded-0" style="background-color: rgba(255, 255, 255, 0.616);">
+        <h1>IAMHONA.page</h1>
+        <p>호현이의 소소한 취미생활 모음</p>
+    </header>
+
+    <!-- 내비게이션 바 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME / 홈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="motte.html">Motte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arsenal.html">Arsenal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemon.html">Pokémon</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="books.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Books</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              This homepage is a collection of things I like
+            </span>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">책 소개 페이지 안내</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>아직 미완성이라 준비 중입니다. 기대해 주세요!</p>
+                <p>It's not finished yet, so I'm getting ready. <br> Please be looking forward for it!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 캐러셀 예시 -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="8000">
+          <img src="사진/모트배너.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Idol of Indie scene, Motte</h5>
+            <p>유니크한 목소리와 센치한 노랫말. 싱어송라이터 모트</p>
+            <p><a class="btn btn-lg btn-warning" href="motte.html">Go to Motte page</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <img src="사진/아스날배너.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>"My love and support forever.”</h5>
+            <p>8년 차 아스날 팬의 눈물겨운 이번 시즌 결산</p>
+            <p><a class="btn btn-lg btn-danger" href="arsenal.html">Go to Arsenal page</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <img src="사진/포켓몬배너.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Strong Pokémon. Weak Pokémon. <br>That is only the selfish perception of people.</h5>
+            <p>포켓몬 즐겜유저 호현이의 애착 샘플 리스트</p>
+            <p><a class="btn btn-lg btn-success" href="pokemon.html">Go to Pokémon page</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <hr style="margin-bottom: 50px;">
+
+    <!-- 메인 텍스트 -->
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark mx-5">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic"> About this homepage... </h1>
+        <p class="lead my-3"> 이 홈페이지는 소셜웹프로그래밍 수업의 기말 과제로 만들어졌습니다.<br>
+          <br>하단의 카드나 상단의 페이지 목록을 통해 각각 다른 주제의 페이지로 넘어갈 수 있습니다.<br>
+          <br>호현이의 관심 분야만을 다뤘기 때문에 대부분의 내용이 전문성과 사실 여부보다는 주관에 따라 작성되었음을 알려드립니다.<br>
+          <br>최대한 다양한 요소를 활용하려 노력했습니다.<br>
+          <br>책 페이지가 없는 것은 귀찮아서 만들지 않은 것이 아니라, 비활성화와 모달을 사용한 어엿한 결과물입니다. 진짜입니다.  </p>
+        <p class="lead mb-0 text-white fw-bold"> Continue below... </p>
+      </div>
+    </div>
+
+    <hr style="margin-top: 50px; margin-bottom: 50px;">
+
+    <!-- 카드+버튼 -->
+    <div class="row mx-5">
+      <div class="col-lg-3">
+        <div class="card" style="width: auto;">
+          <img src="사진/모트3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Motte</h5>
+            <p class="card-text">모트가 누구인지 알려드립니다. 직접 가본 공연 후기와 모트의 사진을 볼 수 있습니다.</p>
+            <a href="motte.html" class="btn btn-warning">Go to Motte page</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: auto;">
+          <img src="사진/에미레이트스타디움.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arsenal</h5>
+            <p class="card-text">8년 차 구너의 주관적인 이번 시즌 결산입니다. 아스날 팬이라면 눈물 닦을 준비를 해주세요...</p>
+            <a href="arsenal.html" class="btn btn-danger">Go to Arsenal page</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: auto;">
+          <img src="사진/포켓몬일러스트.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pokémon</h5>
+            <p class="card-text">포켓몬 이야기는 언제나 환영! 즐겁게 게임하는 호나의 파트너 포켓몬들을 소개합니다. </p>
+            <a href="pokemon.html" class="btn btn-success">Go to Pokémon page</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: auto;">
+          <img src="사진/마음학개론.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Books</h5>
+            <p class="card-text">직접 작가로 참여한 책을 비롯해, 인상 깊게 읽은 책들에 대해 이야기하는 곳입니다. 기대해 주세요.</p>
+            <a href="..." class="btn btn-secondary disabled">Coming soon...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 하단 푸터 깔끔하게 -->
+    <hr style="margin-top: 50px;">
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">맨 위로</a>
+        </p>
+        <p class="mb-1">e-mail adress : 96skystar@hanmail.net & 96skystar@naver.com</p>
+        <p class="mb-0">*호나는 호현 + 나(1인칭)의 합성어로 말을 막 하기 시작한 어린 호현이가 만든 별명이다. </p>
+      </div>
+    </footer>
+
+    
+</body>
+</html>

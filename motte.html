@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 기말 과제 웹페이지 Motte </title>
+
+    <!-- 부트스트랩 기본 예제용 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- 헤더용 링크 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="jumbotron text-center mb-0 rounded-0" style="background-color: rgb(255, 197, 111);">
+        <h1>for Motte</h1>
+        <p>인디계의 아이돌, 모트!</p>
+    </header>
+
+    <!-- 내비게이션 바 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME / 홈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="motte.html">Motte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arsenal.html">Arsenal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pokemon.html">Pokémon</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="books.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Books</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              This homepage is a collection of things I like
+            </span>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">책 소개 페이지 안내</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>아직 미완성이라 준비 중입니다. 기대해 주세요!</p>
+                <p>It's not finished yet, so I'm getting ready. <br> Please be looking forward for it!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 모트 소개 섹션 -->
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-bold"> 모트에 대해 알 Aㅏ보 Zㅏ </h1>
+            <p class="lead text-muted">모트는 내가 정말 좋아하는 가수다. 발매된 3곡뿐이던 시절부터 꾸준히 들어왔다. 
+              매번 발전하는 음악성과 최근에는 본인만의 독특한 개성을 찾은 것 같아 더 보기 좋다. 
+              한 번 들으면 잊을 수 없는 목소리, 여운이 남는 가사, 감각적인 멜로디까지. 밤하늘을 올려다보며 듣기 좋은 노래들 투성이다. </p>
+            <p>
+              <a href="https://www.melon.com/artist/timeline.htm?artistId=1909276" class="btn btn-success my-2" target="_blank">멜론</a>
+              <a href="https://vibe.naver.com/artist/1813908" class="btn btn-dark my-2" target="_blank">네이버 VIBE</a>
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <hr style="margin-bottom: 50px;">
+
+    <!-- 사이드 메뉴 + 사진첩 -->
+    <div class="row mx-5">
+        <div class="col-md-4">
+            <h3> 사이드 메뉴 </h3>
+            <hr>
+            <div class="list-group">
+                <a href="https://cafe.naver.com/mottelu" class="list-group-item" target="_blank">모트 팬카페</a>
+                <a href="https://open.kakao.com/o/gL2089tc" class="list-group-item" target="_blank">모트 팬 오픈 카톡방</a>
+                <a href="https://www.instagram.com/motte_mu/" class="list-group-item" target="_blank">모트 공식 인스타그램</a>
+                <a href="https://www.youtube.com/channel/UCz7Xmg1U8rNqX_QPqU1FAOQ" class="list-group-item" target="_blank">모트의 다락방 유튜브</a>
+                <a href="https://namu.wiki/w/%EB%AA%A8%ED%8A%B8(%EA%B0%80%EC%88%98)" class="list-group-item" target="_blank">모트 나무위키</a>
+                <a href="http://rubyrecord.com/" class="list-group-item " target="_blank">루비레코드</a>
+            </div>
+            
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-7">
+            <h2 class="fw-bolder"> 모트 사진첩 </h2>
+            <div class="row featurette">
+                <div class="col-md-7" style="margin-bottom: 90px;">
+                    <h2 class="featurette-heading py-5">첫 EP앨범 발매!</h2>
+                    <h4 class="text-muted">"소중함에 대하여"</h4>
+                    <p class="lead">살아가는 동안 그 말을 또 다른 바람에 잃어버릴지라도 문득문득 피어나는 행복감은 온전히 너의 것.
+                      내가 너를 사랑하는 것처럼 너도 너를 사랑했으면.
+                    </p>
+                </div>
+                <div class="col-md-5" style="margin-bottom: 90px;">
+                    <img src="사진/모트.jpg" class="img-fluid mx-auto" width="500" height="500" alt="...">
+                </div>
+
+                <div class="col-md-5" style="margin-bottom: 90px;">
+                    <img src="사진/모트공연.png" class="img-fluid mx-auto" width="500" height="500" alt="...">
+                </div>
+                <div class="col-md-7" style="margin-bottom: 90px;">
+                    <h2 class="featurette-heading py-5"> 나의 첫 관람 공연 </h2>
+                    <h4 class="text-muted">[모지: 모트의 지금]</h4>
+                    <p class="lead">내가 처음으로 갔던 모트의 공연이다. 공연 중 이벤트에도 당첨되어 무대에 올라가기까지 했다. 
+                      모트와 웃음 참기 대결 끝에 상품과 사인 CD를 받았다.
+                    </p>
+                </div>
+
+                <div class="col-md-7" style="margin-bottom: 90px;">
+                    <h2 class="featurette-heading py-5">노란색이 좋아 </h2>
+                    <h4 class="text-muted">공연 관람 시 필수 복장</h4>
+                    <p class="lead">모트는 노란색을 좋아한다고 한다. 마침 나도 노란색을 아주 좋아해서 노란 옷이 매우 많다. 계절 별로 한 개 이상 있기 때문에
+                      공연을 보러 갈 때는 꼭 노란색을 입는 편이다.
+                    </p>
+                </div>
+                <div class="col-md-5" style="margin-bottom: 90px;">
+                    <img src="사진/모트2.png" class="img-fluid mx-auto" width="500" height="500" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 하단 푸터 -->
+    <hr style="margin-top: 50px;">
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">맨 위로</a>
+        </p>
+        <p class="mb-1">e-mail adress : 96skystar@hanmail.net & 96skystar@naver.com</p>
+        <p class="mb-0">*모트는 첫 공연 이후부터 호현이를 기억하게 됐었지만 코로나로 인해 1년 이상 못 봤기 때문에 가물가물할 것으로 보인다.</p>
+      </div>
+    </footer>
+
+</body>
+</html>
